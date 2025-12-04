@@ -1,12 +1,9 @@
 import type React from "react";
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
-
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+import { RegisterServiceWorker } from "./register-sw";
 
 // <CHANGE> metadata otimizada para PWA de sistema de vendas
 export const metadata: Metadata = {
@@ -55,6 +52,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`font-sans antialiased`}>
+        <RegisterServiceWorker />
         {children} <Toaster richColors position="top-right" />
         <Analytics />
       </body>
