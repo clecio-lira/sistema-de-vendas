@@ -3,13 +3,10 @@ import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
-import { RegisterServiceWorker } from "./register-sw";
 
-// <CHANGE> metadata otimizada para PWA de sistema de vendas
 export const metadata: Metadata = {
   title: "Sistema de Vendas",
   description: "Controle prático de vendas com funcionalidade offline",
-  generator: "v0.app",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -18,24 +15,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
+      { url: "/icon-light-32x32.png", media: "(prefers-color-scheme: light)" },
+      { url: "/icon-dark-32x32.png", media: "(prefers-color-scheme: dark)" },
+      { url: "/icon.svg", type: "image/svg+xml" },
     ],
     apple: "/apple-icon.png",
   },
 };
 
-// <CHANGE> viewport configurado para PWA
 export const viewport: Viewport = {
   themeColor: "#171717",
   width: "device-width",
@@ -46,14 +33,14 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="pt-BR">
-      <body className={`font-sans antialiased`}>
-        <RegisterServiceWorker />
-        {children} <Toaster richColors position="top-right" />
+      <body className="font-sans antialiased">
+        {children}
+        <Toaster richColors position="top-right" />
         <Analytics />
       </body>
     </html>
