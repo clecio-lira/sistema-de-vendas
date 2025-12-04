@@ -106,8 +106,8 @@ export default function HistoricoPage() {
           <Card>
             <CardContent className="p-4">
               <div className="flex items-center gap-3">
-                <div className="p-3 bg-accent/10 rounded-lg">
-                  <DollarSign className="h-5 w-5 text-accent" />
+                <div className="p-3 bg-primary/10 rounded-lg">
+                  <DollarSign className="h-5 w-5 text-primary" />
                 </div>
                 <div className="flex-1">
                   <p className="text-xs text-muted-foreground">
@@ -116,7 +116,7 @@ export default function HistoricoPage() {
                   <p className="text-2xl font-bold text-foreground">
                     {stats.openCount}
                   </p>
-                  <p className="text-sm font-medium text-accent">
+                  <p className="text-sm font-medium text-primary">
                     R$ {stats.openTotal.toFixed(2)}
                   </p>
                 </div>
