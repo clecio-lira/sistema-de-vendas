@@ -10,15 +10,14 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 // <CHANGE> metadata otimizada para PWA de sistema de vendas
 export const metadata: Metadata = {
-  title: "Sistema de Vendas de Espetinho",
-  description:
-    "Controle prático de vendas de espetinho com funcionalidade offline",
+  title: "Sistema de Vendas",
+  description: "Controle prático de vendas com funcionalidade offline",
   generator: "v0.app",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Espetinho",
+    title: "Vendas",
   },
   icons: {
     icon: [
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
 
 // <CHANGE> viewport configurado para PWA
 export const viewport: Viewport = {
-  themeColor: "#f59e0b",
+  themeColor: "#171717",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
