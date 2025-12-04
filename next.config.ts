@@ -8,8 +8,6 @@ const withSerwist = withSerwistInit({
   cacheOnNavigation: true,
 });
 
-const nextConfig: NextConfig = {
-  turbopack: {}, // necessário no Next 16
-};
+const nextConfig: NextConfig = {};
 
 export default withSerwist(nextConfig);
