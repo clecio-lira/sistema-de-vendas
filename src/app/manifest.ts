@@ -1,0 +1,25 @@
+import type { MetadataRoute } from "next";
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: "Sistema de Vendas",
+    short_name: "Vendas",
+    description: "Sistema para controle de vendas",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#FFFFFF",
+    theme_color: "#171717",
+    icons: [
+      {
+        src: "/image192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        src: "/image512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  };
+}
