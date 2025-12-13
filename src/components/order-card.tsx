@@ -3,15 +3,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Check, X } from "lucide-react";
+import { Check, X, Trash2 } from "lucide-react";
 import type { Order } from "@/lib/storage";
 
 interface OrderCardProps {
   order: Order;
   onUpdateStatus: (orderId: string, status: "aberto" | "fechado") => void;
+  onDelete?: (orderId: string) => void;
 }
 
-export function OrderCard({ order, onUpdateStatus }: OrderCardProps) {
+export function OrderCard({ order, onUpdateStatus, onDelete }: OrderCardProps) {
   const date = new Date(order.createdAt);
   const dateStr = date.toLocaleDateString("pt-BR");
   const timeStr = date.toLocaleTimeString("pt-BR", {
@@ -75,14 +76,25 @@ export function OrderCard({ order, onUpdateStatus }: OrderCardProps) {
         )}
 
         {order.status === "fechado" && (
-          <Button
-            onClick={() => onUpdateStatus(order.id, "aberto")}
-            className="w-full"
-            variant="outline"
-          >
-            <X className="mr-2 h-4 w-4" />
-            Reabrir Pedido
-          </Button>
+          <div className="flex gap-2">
+            <Button
+              onClick={() => onUpdateStatus(order.id, "aberto")}
+              className="flex-1"
+              variant="outline"
+            >
+              <X className="mr-2 h-4 w-4" />
+              Reabrir pedido
+            </Button>
+            {onDelete && (
+              <Button
+                onClick={() => onDelete(order.id)}
+                variant="destructive"
+                size="icon"
+              >
+                <Trash2 className="h-4 w-4" />
+              </Button>
+            )}
+          </div>
         )}
       </CardContent>
     </Card>

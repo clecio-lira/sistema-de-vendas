@@ -36,6 +36,11 @@ export default function HistoricoPage() {
     loadOrders();
   };
 
+  const handleDeleteOrder = (orderId: string) => {
+    storage.deleteOrder(orderId);
+    loadOrders();
+  };
+
   const filteredOrders = useMemo(() => {
     if (filter === "todos") return orders;
     return orders.filter((order) => order.status === filter);
@@ -158,6 +163,7 @@ export default function HistoricoPage() {
                 key={order.id}
                 order={order}
                 onUpdateStatus={handleUpdateStatus}
+                onDelete={handleDeleteOrder}
               />
             ))
           )}
