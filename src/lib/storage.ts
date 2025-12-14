@@ -31,14 +31,64 @@ export interface Order {
 
 // Produtos padrão
 const defaultProducts: Product[] = [
-  { id: "1", name: "Espetinho de Carne", price: 5.0, category: "Espetinho" },
-  { id: "2", name: "Espetinho de Frango", price: 4.5, category: "Espetinho" },
-  { id: "3", name: "Espetinho de Linguiça", price: 5.5, category: "Espetinho" },
-  { id: "4", name: "Espetinho de Queijo", price: 4.0, category: "Espetinho" },
-  { id: "5", name: "Espetinho de Coração", price: 6.0, category: "Espetinho" },
-  { id: "6", name: "Refrigerante Lata", price: 5.0, category: "Bebida" },
-  { id: "7", name: "Água", price: 3.0, category: "Bebida" },
-  { id: "8", name: "Cerveja", price: 8.0, category: "Bebida" },
+  { id: "1", name: "Cerveja Brahma", price: 6.0, category: "Bebida" },
+  { id: "2", name: "Cerveja Budweiser", price: 7.0, category: "Bebida" },
+  { id: "3", name: "Cerveja Heineken", price: 8.0, category: "Bebida" },
+  { id: "4", name: "Cerveja Itaipava", price: 6.0, category: "Bebida" },
+
+  { id: "5", name: "Dobradinha", price: 10.0, category: "Tira Gosto" },
+  { id: "6", name: "Dose de Dreher", price: 3.0, category: "Bebida" },
+  { id: "7", name: "Dose Temperada", price: 3.0, category: "Bebida" },
+
+  { id: "8", name: "Espetinho de Boi", price: 5.0, category: "Petisco" },
+  { id: "9", name: "Espetinho de Calabresa", price: 5.0, category: "Petisco" },
+  { id: "10", name: "Espetinho de Coração", price: 5.0, category: "Petisco" },
+  { id: "11", name: "Espetinho de Frango", price: 5.0, category: "Petisco" },
+  {
+    id: "12",
+    name: "Espetinho de Linguiça de Frango",
+    price: 5.0,
+    category: "Petisco",
+  },
+  { id: "13", name: "Espetinho de Porco", price: 5.0, category: "Petisco" },
+  { id: "14", name: "Espetinho de Queijo", price: 5.0, category: "Petisco" },
+  {
+    id: "15",
+    name: "Espetinho Medalhão Bacon/Boi",
+    price: 5.0,
+    category: "Petisco",
+  },
+  {
+    id: "16",
+    name: "Espetinho Medalhão Bacon/Frango",
+    price: 5.0,
+    category: "Petisco",
+  },
+  { id: "17", name: "Espetinho Mistão", price: 5.0, category: "Petisco" },
+  {
+    id: "18",
+    name: "Espetinho Queijo com Bacon",
+    price: 5.0,
+    category: "Petisco",
+  },
+
+  { id: "19", name: "Feijoada", price: 10.0, category: "Tira Gosto" },
+  { id: "20", name: "Feijoada Completa", price: 15.0, category: "Tira Gosto" },
+  { id: "21", name: "Mocotó", price: 10.0, category: "Tira Gosto" },
+
+  { id: "22", name: "Pitu", price: 7.0, category: "Bebida" },
+  { id: "23", name: "Pitu Limão", price: 7.0, category: "Bebida" },
+  { id: "24", name: "Pitu Limão e Mel", price: 10.0, category: "Bebida" },
+
+  {
+    id: "25",
+    name: "Refrigerante Santa Joana",
+    price: 2.5,
+    category: "Bebida",
+  },
+
+  { id: "26", name: "Vaca Atolada", price: 10.0, category: "Tira Gosto" },
+  { id: "27", name: "Vatapá", price: 10.0, category: "Tira Gosto" },
 ];
 
 // LocalStorage helpers
