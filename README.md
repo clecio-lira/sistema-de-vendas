@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SISTEMA-DE-VENDAS
 
-## Getting Started
+*Transformando Vendas com Poder e Precisão*
 
-First, run the development server:
+<div align="center">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Construído com as seguintes ferramentas e tecnologias:**
+
+</div>
+
+---
+
+## 📋 Índice
+
+* [Visão Geral](https://www.google.com/search?q=%23vis%C3%A3o-geral)
+* [Primeiros Passos](https://www.google.com/search?q=%23primeiros-passos)
+* [Pré-requisitos](https://www.google.com/search?q=%23pr%C3%A9-requisitos)
+* [Instalação](https://www.google.com/search?q=%23instala%C3%A7%C3%A3o)
+* [Uso](https://www.google.com/search?q=%23uso)
+* [Testes](https://www.google.com/search?q=%23testes)
+
+
+
+---
+
+## 🔍 Visão Geral
+
+O **sistema-de-vendas** é uma plataforma de vendas moderna baseada em Next.js, projetada para oferecer alto desempenho, resiliência offline e uma experiência de usuário fluida. Construído com um conjunto abrangente de componentes de UI reutilizáveis, integração de service workers e gerenciamento robusto de dados, ele agiliza o desenvolvimento de aplicações de e-commerce escaláveis.
+
+**Por que o sistema-de-vendas?**
+
+Este projeto visa simplificar a construção de sistemas de vendas escaláveis e capazes de operar offline. Os principais recursos incluem:
+
+* 🎯 **Suporte a Service Worker:** Permite funcionalidade offline e melhor desempenho através de estratégias de cache inteligentes.
+* 🧩 **Componentes de UI Reutilizáveis:** Oferece um sistema de design consistente e acessível com componentes como grades de produtos, cartões de pedidos e notificações.
+* ⚙️ **Otimização de Performance:** Utiliza Next.js para renderização no lado do servidor (SSR), otimização automática de fontes e processos de build eficientes.
+* 💾 **Persistência de Dados Offline:** Utiliza o armazenamento local para gerenciar produtos, clientes e pedidos, garantindo a consistência dos dados mesmo sem conexão.
+* 🔧 **Arquitetura Amigável ao Desenvolvedor:** Inclui funções utilitárias e código modular para facilitar a manutenção e escalabilidade.
+* 🔔 **Engajamento do Usuário:** Integra notificações *toast* que respeitam o tema para feedback do usuário em tempo real.
+
+---
+
+## 🚀 Primeiros Passos
+
+### Pré-requisitos
+
+Este projeto requer as seguintes dependências:
+
+* **Linguagem de Programação:** TypeScript
+* **Gerenciador de Pacotes:** npm
+
+### Instalação
+
+Siga os passos abaixo para configurar o projeto localmente:
+
+1. **Clone o repositório:**
+```sh
+git clone https://github.com/clecio-lira/sistema-de-vendas
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Acesse o diretório do projeto:**
+```sh
+cd sistema-de-vendas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+3. **Instale as dependências:**
+```sh
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Uso
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Inicie o projeto com o comando:
+
+```sh
+npm start
+
+```
+
+### Testes
+
+O sistema utiliza um framework de testes integrado. Execute a suíte de testes com:
+
+```sh
+npm test
+
+```
+
+---
+
+[⬆ Voltar ao topo](https://www.google.com/search?q=%23SISTEMA-DE-VENDAS)
+
+---
