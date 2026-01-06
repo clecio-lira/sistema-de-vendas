@@ -95,6 +95,6 @@ npm test
 
 ---
 
-[⬆ Voltar ao topo](https://www.google.com/search?q=%23SISTEMA-DE-VENDAS)
+[⬆ Voltar ao topo]
 
 ---
