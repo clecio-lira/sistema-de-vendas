@@ -80,6 +80,6 @@ npm install
 Inicie o projeto com o comando:
 
 ```sh
-npm start
+npm run dev
 
 ```
