@@ -83,18 +83,3 @@ Inicie o projeto com o comando:
 npm start
 
 ```
-
-### Testes
-
-O sistema utiliza um framework de testes integrado. Execute a suíte de testes com:
-
-```sh
-npm test
-
-```
-
----
-
-[⬆ Voltar ao topo]
-
----
